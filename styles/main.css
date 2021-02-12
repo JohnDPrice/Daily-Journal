@@ -23,17 +23,10 @@ label {
 	display: flex;
 	flex-direction: column;
 }
-.button-container {
-	margin-top: 1em;
-}
 
 .journal-form-container {
 	display: flex;
 	justify-content: center;
 	border: 1px solid black;
+	border-radius: 1em;
 }
-
-#saveJournalEntry {
-	margin: 2vh;
-}
-

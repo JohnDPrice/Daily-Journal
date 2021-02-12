@@ -1,3 +1,5 @@
-import {Form} from "./form/Form.js"
+import {EntriesForm} from "./form/JournalForm.js"
+import { getMoods } from "./form/MoodProvider.js"
 
-Form()
+EntriesForm()
+getMoods()

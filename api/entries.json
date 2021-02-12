@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "conceptsCovered": "Test Concept",
+      "date": "2021-02-11",
+      "journalEntry": "Test entry",
+      "moodId": 1,
+      "id": 1
+    },
+    {
+      "conceptsCovered": "Test concept",
+      "date": "2021-02-11",
+      "journalEntry": "Test Entry",
+      "moodId": 2,
+      "id": 2
+    },
+    {
+      "conceptsCovered": "Test",
+      "date": "2021-02-12",
+      "journalEntry": "Test",
+      "moodId": 1,
+      "id": 3
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Happy"
+    },
+    {
+      "id": 2,
+      "label": "Frustrated"
+    },
+    {
+      "id": 3,
+      "label": "Mediocre"
+    }
+  ]
+}
