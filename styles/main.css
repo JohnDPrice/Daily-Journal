@@ -30,3 +30,16 @@ label {
 	border: 1px solid black;
 	border-radius: 1em;
 }
+
+.filters {
+	display: flex;
+}
+
+.mood-filter {
+	display: flex;
+	justify-content: center;
+}
+
+.fieldset {
+	text-align: center;
+}

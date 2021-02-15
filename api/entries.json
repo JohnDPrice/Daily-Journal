@@ -20,6 +20,13 @@
       "journalEntry": "Test",
       "moodId": 1,
       "id": 3
+    },
+    {
+      "conceptsCovered": "Test Note",
+      "date": "2021-02-12",
+      "journalEntry": "Test note",
+      "moodId": 3,
+      "id": 4
     }
   ],
   "moods": [

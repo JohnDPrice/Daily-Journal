@@ -15,27 +15,29 @@ eventHub.addEventListener("click", eventObject => {
 
 
 // Standard list function you're used to writing by now. BUT, don't call this in main.js! Why not?
-export function EntryList() {
+export function EntryList(moodSelected) {
     getEntries().then(() => {
-            const allTheEntries = useEntries()
+        let allTheEntries = useEntries()
 
-            // const arrayOfEntriesHTMLRepresentations = allTheEntries.map(entry => {
-            //     console.log(Form(entry))
+        for(const entry of allTheEntries){
+            if(moodSelected == entry.moodId){
+                console.log(moodSelected)
+                 allTheEntries = allTheEntries.filter(currentEntryInLoop => {
                 
-            //     const html = Form(entry)
-
-            //     return html
-            // })
-            let arrayOfEntriesHTMLRepresentations = ""
-
-            for(const entry of allTheEntries){
-                arrayOfEntriesHTMLRepresentations += Entry(entry)
+                    return currentEntryInLoop.moodId == moodSelected
+                })
             }
+        }
 
-            const stringOfAllRepresentations = arrayOfEntriesHTMLRepresentations
+        let arrayOfEntriesHTMLRepresentations = ""
+        for(const currentEntryInLoop of allTheEntries){
+            arrayOfEntriesHTMLRepresentations += Entry(currentEntryInLoop)
+        }
 
-            contentTarget.innerHTML = `<h3>Journal Entries</h3>${stringOfAllRepresentations}`
+        const stringOfAllRepresentations = arrayOfEntriesHTMLRepresentations
+
+        contentTarget.innerHTML = `<h3>Journal Entries</h3>${stringOfAllRepresentations}`
 
             
-        })
+    })
 }
